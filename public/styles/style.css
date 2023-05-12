@@ -1,0 +1,26 @@
+.card-img-top {
+  height: 300px;
+}
+
+.btn.btn-primary {
+  background: #000000;
+  border: none;
+}
+
+.btn.btn-primary:focus,
+.btn.btn-primary:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.card:hover {
+  box-shadow: 20px 20px 80px -44px #000;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.figure {
+  width: 450px;
+}
+
+
