@@ -7,24 +7,37 @@ class Places extends BaseController
     public function mbs()
     {
         $data = [
-            'title' => 'MBS',
+            'title' => 'Marina Bay Sands',
         ];
         return view('places/mbs', $data);
     }
 
     public function gbtb()
     {
-        $data = [
-            'title' => 'GBTB',
-        ];
-        return view('places/gbtb', $data);
+        return view('places/gbtb');
     }
 
     public function cq()
     {
         $data = [
-            'title' => 'CQ',
+            'title' => 'Clarke Quay',
         ];
         return view('places/cq', $data);
+    }
+
+    public function si()
+    {
+        $data = [
+            'title' => 'Sentosa Island',
+        ];
+        return view('places/si', $data);
+    }
+
+    public function ct()
+    {
+        $data = [
+            'title' => 'Chinatown',
+        ];
+        return view('places/ct', $data);
     }
 }

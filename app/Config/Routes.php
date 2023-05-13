@@ -31,8 +31,10 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/home', 'Home::index');
 $routes->get('/places/mbs', 'Places::mbs');
-$routes->get('/places/gbtb', 'Places::gbtb');
 $routes->get('/places/cq', 'Places::cq');
+$routes->get('/places/si', 'Places::si');
+$routes->get('/places/ct', 'Places::ct');
+
 
 
 /*
