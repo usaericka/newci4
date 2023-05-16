@@ -4,11 +4,16 @@ namespace App\Controllers;
 
 class Home extends BaseController
 {
-    public function index()
-    {
-        $data = [
-            'title' => 'Attractions',
-        ];
-        return view('home' ,$data);
-    }
+   public function index()
+   {
+      $model = new \App\Models\AttractionModel;
+
+      $attractions = $model->findAll();
+      $data = [
+         'title' => 'Attractions',
+         'attractions' => $attractions,
+      ];
+
+      return view('home', $data);
+   }
 }

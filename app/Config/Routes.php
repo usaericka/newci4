@@ -29,7 +29,12 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/home', 'Home::index');
+$routes->get('/', 'Home::index');
+$routes->get('/new', 'Attractions::new');
+$routes->post('/create', 'Attractions::create');
+$routes->get('/edit/(:num)', 'Attractions::edit/$1');
+$routes->post('/update', 'Attractions::update');
+$routes->get('/delete/(:num)', 'Attractions::delete/$1');
 $routes->get('/places/mbs', 'Places::mbs');
 $routes->get('/places/cq', 'Places::cq');
 $routes->get('/places/si', 'Places::si');
@@ -51,5 +56,5 @@ $routes->get('/places/ct', 'Places::ct');
  * needing to reload it.
  */
 if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
-    require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
+   require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
