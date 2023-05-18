@@ -27,7 +27,6 @@ class Attractions extends BaseController
       } else {
          dd($this->model->errors());
       }
-
       return view('Attractions/new');
    }
 

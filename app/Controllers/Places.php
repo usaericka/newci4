@@ -12,11 +12,6 @@ class Places extends BaseController
         return view('places/mbs', $data);
     }
 
-    public function gbtb()
-    {
-        return view('places/gbtb');
-    }
-
     public function cq()
     {
         $data = [
