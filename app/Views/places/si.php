@@ -16,8 +16,10 @@
 <body class="bg-dark">
     <h4 class="container bg-secondary display-5 text-center text-white fs-3 mt-5 fw-bold">Places you can find in Sentosa
         Island</h4>
-    <div class="container-fluid"> <a href="<?= base_url('public/home') ?>"
-            class="btn-link text-decoration-none text-white">Back</a></div>
+    <div class="container-fluid">
+        <?= base_url('./') ?>
+        <a class="btn-link text-decoration-none text-white">Back</a>
+    </div>
 
 
     <div class="container bg-dark py-5 mb-4 mt-4 mx-5">
@@ -26,7 +28,7 @@
                 <div class="flip-card mx-5">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="../images/siloso_beach.jpg" style="width:300px;height:300px;">
+                            <img src="./images/siloso_beach.jpg" style="width:300px;height:300px;">
                             <figcaption class="figure-caption fw-bold text-center text-white">Siloso Beach
                             </figcaption>
                         </div>
@@ -46,7 +48,7 @@
                 <div class="flip-card mx-5">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="../images/ocean-dome.jpg" style="width:300px;height:300px;">
+                            <img src="./images/ocean-dome.jpg" style="width:300px;height:300px;">
                             <figcaption class="figure-caption fw-bold text-center text-white">S.E.A. Aquarium
                             </figcaption>
                         </div>
@@ -66,7 +68,7 @@
                 <div class="flip-card mx-5">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="../images/merlion-park.jpg" style="width:300px;height:300px;">
+                            <img src="./images/merlion-park.jpg" style="width:300px;height:300px;">
                             <figcaption class="figure-caption fw-bold text-center text-white">Merlion Park
                             </figcaption>
                         </div>

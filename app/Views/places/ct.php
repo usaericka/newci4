@@ -15,7 +15,7 @@
 
 <body class="bg-dark">
     <div class="container-fluid mt-5">
-        <a href="<?= base_url('public/home') ?>" class="btn-link text-decoration-none text-white">Back</a>
+        <a href="<?= base_url('./') ?>" class="btn-link text-decoration-none text-white">Back</a>
     </div>
     <div class="container-fluid mb-4 mt-4 mx-2">
         <div class="row">
